@@ -1,6 +1,6 @@
 {
-  "short_name": "Expense Book",
-  "name": "Personal expense management app",
+  "short_name": "Paisa Tracker",
+  "name": "Paisa Tracker",
   "icons": [
     {
       "src": "logo.png",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#03d1ec",
-  "background_color": "#ffffff"
+  "theme_color": "#fff",
+  "background_color": "#03d1ec"
 }

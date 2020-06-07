@@ -12,7 +12,7 @@ const Home = () => {
         <Suspense fallback={<LayoutSpinner />}>
             <ErrorBoundary>
                     <div className="home">
-                    <h2 >Expense book</h2>
+                    <h2 >Paisa Tracker</h2>
                     <div className="home__authBox">
                         {old ? <LoginForm /> : <SignupForm />}
                         <div className="auth__switch"
