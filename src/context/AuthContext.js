@@ -13,11 +13,9 @@ const AuthState = ({ children }) => {
         auth.onAuthStateChanged(user => {
             if(user){
                 localStorage.setItem('user', user.uid);
-                setLoggedIn(true);
                 setUser({ uid: user.uid, email: user.email })
             }else{
                 localStorage.removeItem('user');
-                setLoggedIn(false)
                 setUser({});
             }
         })
@@ -30,6 +28,7 @@ const AuthState = ({ children }) => {
     const logOut = () => {
         auth.signOut().then(function() {
             // Sign-out successful.
+            setLoggedIn(false);
           }).catch(function(error) {
             // An error happened.
           });
@@ -54,6 +53,7 @@ const AuthState = ({ children }) => {
 
     const googleLogin = () => {
         auth.signInWithPopup(googleAuthProvider).then(function(result) {
+            setLoggedIn(true);
             if(result.additionalUserInfo.isNewUser){
                 setNewUser(true);
             }
