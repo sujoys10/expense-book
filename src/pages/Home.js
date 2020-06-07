@@ -19,8 +19,8 @@ const Home = () => {
                             onClick={() => setOld(!old)}
                         >
                             {old
-                                ? 'Need to create an account?' : 
-                                'Already have an account?'
+                                ? 'New user ?' : 
+                                'Existing user ?'
                             }
                         </div>
                         <button className="home__googleLogin" onClick={() => googleLogin()}>
