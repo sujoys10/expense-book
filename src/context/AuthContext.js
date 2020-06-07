@@ -23,7 +23,7 @@ const AuthState = ({ children }) => {
 
     useEffect(() => {
         setLoggedIn(!!localStorage.getItem('user'))
-    }, [])
+    }, [user.uid])
 
     const logOut = () => {
         auth.signOut().then(function() {
@@ -53,7 +53,6 @@ const AuthState = ({ children }) => {
 
     const googleLogin = () => {
         auth.signInWithPopup(googleAuthProvider).then(function(result) {
-            setLoggedIn(true);
             if(result.additionalUserInfo.isNewUser){
                 setNewUser(true);
             }
