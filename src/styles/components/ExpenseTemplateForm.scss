@@ -1,0 +1,29 @@
+.expenseTemplateForm {
+    margin-top: 1.2rem;
+    padding: .5rem;
+}
+
+.expenseTemplateForm__saveBtn {
+    position: fixed;
+    bottom: 7rem;
+    right: 1.6rem;
+    height: 4rem;
+    width: 7rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    background: $brand-color;
+}
+
+.addTemplate-link {
+    text-align: center;
+    margin: 2rem;
+}
+
+.addTemplate-link a {
+    color: $theme-color;
+    text-decoration: underline;
+}

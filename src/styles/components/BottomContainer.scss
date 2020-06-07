@@ -1,0 +1,42 @@
+.bottomContainer {
+    background: $theme-color;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    padding: 2rem 1.2rem;
+    border-radius: 5px 5px 0 0;
+
+    animation: slide-in 225ms cubic-bezier(0.0,0.0,0.2,1);
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(160px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bottomContainer_closeBtn {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background: none;
+}
+
+.bottomContainer_closeBtn:hover {
+    background: white;
+}

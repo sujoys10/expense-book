@@ -1,0 +1,43 @@
+.form {
+    display: grid;
+    gap: .8rem;
+    width: 70%;
+    margin: auto;
+}
+
+.form__radio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form input, select, button{
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background: white;
+}
+
+.form button {
+    text-transform: uppercase;
+}
+
+.form input, select:focus{
+    box-shadow: 1px 1px 6px 0px $brand-color;
+    -webkit-box-shadow: 1px 1px 6px 0px $brand-color;
+    -moz-box-shadow: 3px 3px 5px -3px $brand-color;
+    outline: #ccc;
+}
+
+.form__btnBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__btnBox button {
+    width: 48%;
+}
+
+.full-width {
+    width: 100% !important;
+}

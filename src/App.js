@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from 'react';
+import { Switch } from "react-router-dom";
+import LayoutSpinner from './components/utils/LayoutSpinner';
+import PublicRoute from './router/PublicRoute';
+import PrivateRoute from './router/PrivateRoute';
+const Home = lazy(() => import('./pages/Home'));
+const Template = lazy(() => import('./pages/Template'));
+const Expense = lazy(() => import('./pages/Expense'));
+const Summary = lazy(() => import('./pages/Summary')); 
+ 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<LayoutSpinner />}>
+      <div className="App">
+        <Switch>
+          <PublicRoute exact={true} path='/' component={Home} />
+          <PrivateRoute path='/template' component={Template}/>
+          <PrivateRoute path='/expense' component={Expense} />
+          <PrivateRoute path='/summary' component={Summary} />
+        </Switch>
+      </div>
+    </Suspense>
+    
   );
 }
 

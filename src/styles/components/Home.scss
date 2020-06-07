@@ -1,0 +1,42 @@
+.home {
+    background: $theme-color;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h2 {
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+.home__authBox {
+    width: 260px;
+}
+
+.auth__switch {
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    text-align: center;
+    background: white;
+}
+
+.auth__switch:hover {
+    background: $theme-color;
+    border-color: white;
+}
+
+.home__googleLogin {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    color: rgba(255, 0, 0, 0.842);
+}

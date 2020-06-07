@@ -1,0 +1,48 @@
+.expenseItem {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 6px -2px #ccc;
+    -webkit-box-shadow: 1px 1px 6px -2px #ccc;
+    -moz-box-shadow: 3px 3px 5px -4px #ccc;
+}
+
+.expenseItem:hover {
+    box-shadow: 1px 1px 6px -2px #ccc;
+    -webkit-box-shadow: 1px 1px 6px 0px $theme-color;
+    -moz-box-shadow: 3px 3px 5px -4px #ccc;;
+}
+
+.expenseItem p {
+    font-size: 1.4rem;
+}
+
+.expenseItem__box {
+    display: flex;
+    align-items: center;
+}
+
+.expenseItem__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+.expenseItem__amount {
+    font-weight: 600;
+}
+
+.expenseItem__editBtn {
+    position: absolute;
+    bottom: .5rem;
+    right: 1rem;
+}
+
+.expenseItem__removeBtn {
+    position: absolute;
+    bottom: .5rem;
+    right: 1rem;
+    display: none;
+}

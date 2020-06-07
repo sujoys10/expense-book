@@ -1,0 +1,20 @@
+.authForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.authForm * {
+    margin-top: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.authForm input {
+    padding: 0.6rem;
+}
+
+.authForm button {
+    padding: 0.6rem 0;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+}

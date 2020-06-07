@@ -1,0 +1,44 @@
+html {
+    font-size: 50%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* padding-margin will not considered in size*/
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("../../fonts/openSans/OpenSans-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    font-family: "Open Sans",'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: black;
+    background: #fbfefb;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button:hover {
+    box-shadow: 1px 1px 6px 1px #3a86ff;
+    -webkit-box-shadow: 1px 1px 6px 1px #3a86ff;
+    -moz-box-shadow: 3px 3px 5px 1px #3a86ff;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        width: 100vw;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

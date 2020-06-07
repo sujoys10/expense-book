@@ -1,0 +1,62 @@
+.navbar {
+	width: 100%;
+	height: 4rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.8rem;
+	align-items: center;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 10;
+	background: white;
+	box-shadow: 0 -2px 2px -2px #ccc;
+    -webkit-box-shadow: 0 -2px 2px -2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0 -2px 2px -2px #ccc;  /* Firefox 3.5 - 3.6 */ ;
+}
+
+.logo {
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+}
+
+.navbar button {
+	font-size: 1.4rem;
+	padding: 0.4rem;
+	text-transform: capitalize;
+	background: none;
+	border: none;
+}
+
+.navbar__links {
+    position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height: 5.5rem;
+	z-index:1000;
+	//give nav it's own compsite layer
+	/* will-change:transform;
+	transform: translateZ(0); */	
+	
+	box-shadow: 0 -2px 2px -2px #ccc;
+	background-color:#fff;
+	display: flex;
+}
+.navbar__links a {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 33.33%;
+	height: 100%;
+	font-weight: bold;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+}
+
+.selected {
+	background: $theme-color;
+	color: #f6f6f6;
+}

@@ -1,0 +1,26 @@
+.inputField {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 6px -2px #ccc;
+    -webkit-box-shadow: 1px 1px 6px -2px #ccc;
+    -moz-box-shadow: 3px 3px 5px -4px #ccc;
+}
+
+.inputField label {
+    font-weight: bold;
+    width: 25%;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+}
+
+.inputField input {
+    width: 25%;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    /* box-shadow: 1px 1px 6px -2px #ccc;
+    -webkit-box-shadow: 1px 1px 6px -2px #ccc;
+    -moz-box-shadow: 3px 3px 5px -4px #ccc; */
+}
