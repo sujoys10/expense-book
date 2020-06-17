@@ -3,7 +3,7 @@ import 'firebase/database';
 import 'firebase/auth';
 
 const config = {
-    apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
+    apiKey: 'AIzaSyCE7hBV1drNkMZrYOobU42jQmWWj5xctF8',
     authDomain: "expense-book-14efe.firebaseapp.com",
     databaseURL: "https://expense-book-14efe.firebaseio.com/",
     storageBucket: "bucket.appspot.com"
