@@ -1,5 +1,5 @@
 .home {
-    background: $theme-color;
+    background: #f6f6f6;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 .home h2 {
     margin-bottom: 5rem;
     font-size: 2.5rem;
-    color: white;
+    color: $theme-color;
     text-transform: capitalize;
 }
 
@@ -24,12 +24,12 @@
     border-radius: 0.5rem;
     padding: 0.2rem;
     text-align: center;
-    background: white;
+    background: #ccc;
 }
 
 .auth__switch:hover {
     background-color: #fbfefb;
-    border-color: white;
+    border-color: #ccc;
 }
 
 .home__googleLogin {
