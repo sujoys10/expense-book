@@ -27,14 +27,6 @@ const TemplateItem = ({ item: { id, title, catagory, defaultExpense }}) => {
                 <p>Name:  {title}</p>
             </div>
             <p>Expense:  {defaultExpense}</p>
-            {/* <div className="templateItem__box">
-                <img 
-                    src={process.env.PUBLIC_URL + '/icons/'+ catagory+'.svg'}
-                    alt={catagory}
-                />
-                <p>Name:  {title}</p>
-            </div>
-            <p>Default Expense:  {defaultExpense}</p> */}
             <button
                 className="templateItem__editbtn"
                 onClick={handleEdit}>edit</button>

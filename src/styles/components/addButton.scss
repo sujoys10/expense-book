@@ -9,5 +9,13 @@
     border-radius: 50%;
     color: white;
     background: $theme-color;
+    box-shadow: 3px 3px 3px -2px #ccc;
+    -webkit-box-shadow: 3px 3px 3px -2px #ccc;
+    -moz-box-shadow: 3px 3px 3px -2px #ccc;
+}
+
+.addBtn:hover {
+    background: #ccc;
+    color: #000;
 }
 

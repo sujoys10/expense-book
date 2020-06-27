@@ -54,7 +54,7 @@ const ExpenseForm = () => {
         return <Loader />
     }else {
         return (
-            <form className="form" onSubmit={handleSubmit}>
+            <form className="form"  autoComplete="off" onSubmit={handleSubmit}>
                 <input 
                     type="text"
                     name="name"

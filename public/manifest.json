@@ -1,6 +1,6 @@
 {
-  "short_name": "Paisa Tracker",
-  "name": "Paisa Tracker",
+  "short_name": "Montrack",
+  "name": "Montrack",
   "icons": [
     {
       "src": "logo.png",
@@ -21,5 +21,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#fbfefb",
-  "background_color": "#03d1ec"
+  "background_color": "#f6f6f6"
 }

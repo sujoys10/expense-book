@@ -12,10 +12,12 @@ const MonthChart = ({expenses}) => {
     const getCatagoricalExpense = useCallback((expenses) => {
         const obj = {};
         expenses.forEach(exp => {
-            if(!obj[exp.catagory]){
-                obj[exp.catagory] = exp.expense;
-            }else{
-                obj[exp.catagory] += exp.expense;
+            if(exp.type === 'debit'){
+                if(!obj[exp.catagory]){
+                    obj[exp.catagory] = exp.expense;
+                }else{
+                    obj[exp.catagory] += exp.expense;
+                }
             }
         })
         setState(obj);

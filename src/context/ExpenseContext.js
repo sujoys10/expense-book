@@ -72,12 +72,10 @@ const ExpenseState = ({ children }) => {
 
     const addExpense = async (expense) => {
         const { month, day } = getDayMonth(date);
-        //setLoading(true);
         try {
             const newExpense = await database
                 .ref(`users/${user.uid}/expenses/${month}/${day}`)
                 .push(expense);
-            //setLoading(false);
             dispatch({
                 type: 'ADD_EXPENSE',
                 payload: { id: newExpense.key, ...expense }
@@ -89,12 +87,10 @@ const ExpenseState = ({ children }) => {
 
     const editExpense = async (id, expense) => {
         const { month, day } = getDayMonth(date);
-        //setLoading(true);
         try {
             await database
                 .ref(`users/${user.uid}/expenses/${month}/${day}/${id}`)
                 .update(expense);
-            //setLoading(false);    
             dispatch({
                 type: 'EDIT_EXPENSE',
                 payload: { id, expense } 
@@ -106,12 +102,10 @@ const ExpenseState = ({ children }) => {
 
     const removeExpense = async (id) => {
         const { month, day } = getDayMonth(date);
-        setLoading(true);
         try {
             await database
                 .ref(`users/${user.uid}/expenses/${month}/${day}/${id}`)
                 .remove();
-            setLoading(false);
             dispatch({
                 type: 'REMOVE_EXPENSE',
                 payload: { id }

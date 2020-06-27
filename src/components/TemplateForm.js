@@ -44,7 +44,7 @@ const TemplateForm = () => {
     }
 
     return (
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" autoComplete="off" onSubmit={handleSubmit}>
             <input 
                 type="text"
                 name="title"
@@ -85,7 +85,6 @@ const TemplateForm = () => {
                 />
             </div>
 
-            {/* <label htmlFor="defaultValue">Default Expense</label> */}
             <input 
                 type="number"
                 name="defaultValue"

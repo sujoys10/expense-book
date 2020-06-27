@@ -40,11 +40,9 @@ const TemplateState = ({children}) => {
 
     const addItem = (item) => {
         console.log('add');
-        setLoading(true);
         database.ref(`users/${user.uid}/templates/${month}`)
             .push(item)
             .then(ref => {
-                setLoading(false);
                 dispatch({
                     type: 'ADD_ITEM',
                     payload: { 
@@ -55,12 +53,10 @@ const TemplateState = ({children}) => {
     }
 
     const editItem = async (id, item) => {
-        setLoading(true);
         try {
             await database
                 .ref(`users/${user.uid}/templates/${month}/${id}`)
                 .update(item);
-            setLoading(false);
             dispatch({
                 type: 'EDIT_ITEM',
                 payload: { id, item } 
@@ -72,12 +68,10 @@ const TemplateState = ({children}) => {
     }
 
     const removeItem = async (id) => {
-        setLoading(true);
         try {
             await database
                 .ref(`users/${user.uid}/templates/${month}/${id}`)
                 .remove();
-            setLoading(false);
             dispatch({
                 type: 'REMOVE_ITEM',
                 payload: { id } 

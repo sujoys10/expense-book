@@ -6,7 +6,7 @@ export default function Navbar(){
 
     return(
         <div className="navbar">
-            <Link className="logo" to="/">Paisa Tracker</Link>
+            <Link className="logo" to="/">Montrack</Link>
             <Logout />
             <div className="navbar__links">
                 <NavLink to="/template" activeClassName="selected">Template</NavLink>

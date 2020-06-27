@@ -27,9 +27,8 @@ body {
 }
 
 button:hover {
-    box-shadow: 1px 1px 6px 1px #3a86ff;
-    -webkit-box-shadow: 1px 1px 6px 1px #3a86ff;
-    -moz-box-shadow: 3px 3px 5px 1px #3a86ff;
+    background: #006edc;
+    color: #ccc;
 }
 
 @media screen and (max-width: 500px){

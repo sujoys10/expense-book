@@ -2,10 +2,10 @@
     padding: 8px;
     border-radius: 5px;
     position: relative;
-    //border: 1px solid $border-color;
-    box-shadow: 1px 1px 6px -3px $border-color;
-    -webkit-box-shadow: 1px 1px 6px -3px $border-color;
-    -moz-box-shadow: 3px 3px 5px -3px $border-color;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 6px -3px #ccc;
+    -webkit-box-shadow: 1px 1px 6px -3px #ccc;
+    -moz-box-shadow: 3px 3px 5px -3px #ccc;
 }
 
 .templateItem p {
@@ -32,7 +32,7 @@
     position: absolute;
     bottom: 1rem;
     right: 1rem;
-    border: 1px solid $border-color;
+    border: 1px solid $theme-color;
     border-radius: 4px;
     padding: 4px 8px;
     background: none;
