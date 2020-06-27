@@ -22,9 +22,10 @@
     margin-top: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
-    padding: 0.2rem;
+    padding: 0.1rem;
+    font-size: 1.4rem;
     text-align: center;
-    background: #ccc;
+    background: #f6f6f6;
 }
 
 .auth__switch:hover {
@@ -36,7 +37,15 @@
     width: 100%;
     padding: 0.6rem;
     margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
     text-transform: capitalize;
     letter-spacing: 1.2px;
     color: rgba(255, 0, 0, 0.842);
 }
+
+.home__googleLogin:hover {
+    background: rgba(255, 0, 0, 0.842);
+    color: #f6f6f6;
+}
+
