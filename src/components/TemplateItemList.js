@@ -21,7 +21,7 @@ const TemplateItemList = () => {
                                 />
                             ))}
                         </Fragment>
-                    ): <Message text={"no item added any item yet"}/>
+                    ): <Message text={"no item added yet"}/>
                     }
                 </div>
             </Suspense>
